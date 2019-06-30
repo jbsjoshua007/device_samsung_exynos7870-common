@@ -147,4 +147,8 @@
         <item>SUPL_PORT=7275</item>
         <item>SUPL_MODE=1</item>
     </string-array>
+
+    <!-- Whether the always on display mode is available. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
 </resources>
