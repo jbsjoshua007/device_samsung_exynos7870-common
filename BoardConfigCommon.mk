@@ -26,6 +26,21 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/exynos7870-common/sepolicy
 
+# Ignore SELinux neverallows
+SELINUX_IGNORE_NEVERALLOWS := true
+
+# CCACHE
+export USE_CCACHE=1
+
+# DEPENDENCIES
+export ALLOW_MISSING_DEPENDENCIES=true
+
+#Just another command
+export LC_ALL=C 
+
+#Java
+export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 
+
 # Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
